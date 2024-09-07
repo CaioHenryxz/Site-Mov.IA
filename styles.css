@@ -1,0 +1,153 @@
+/* styles.css */
+body {
+    font-family: Cambria, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #00021f;
+    color: #ffffff;
+}
+
+header {
+    background-color: #00021f;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.active {
+    background-color: #000000;
+}
+
+.main-container {
+    padding: 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#genre-filter {
+    padding: 10px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.tab-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 250px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+}
+
+.star {
+    font-size: 20px;
+    color: #ffd700;
+    cursor: pointer;
+}
+
+.star:hover,
+.star.selected {
+    color: #ffcc00;
+}
+
+#synopsis {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00021f;
+    border: 1px solid #00e6ee;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    z-index: 1000;
+}
+
+#synopsis button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #00021f;
+    color: #00e6ee;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#synopsis-title {
+    margin-top: 0;
+}
